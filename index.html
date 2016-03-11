@@ -195,7 +195,7 @@
 	tableau.registerConnector(myConnector);
 	$(document).ready(function () {
 		//register some input handlers
-		$("#inputForm").submit(function() { 
+		$("#inputForm").submit(function(event) { 
 			// This event fires when a button is clicked 
 			event.preventDefault(); 
 			var checkedBoxes = $('input[name=dataSourceName]:checked');
